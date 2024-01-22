@@ -1,0 +1,17 @@
+#FUNCIÓN PARA CALCULAR EL RENDIMIENTO SOBRE LA INVERSIÓN
+
+#monto= monto invertido
+#beneficio= monto ganado al final de la inversión
+
+def ahorros(monto, beneficio):
+  return ((beneficio - monto) / monto) * 100
+
+print("El rendimiento de tu inversión fue de un",ahorros(5000,5600),"%")
+
+#CALCULA EL MONTO QUE SE HA AHORRADO
+#monto= monto deseas ahorrar
+#tiempo= Tiempo en formato meses
+
+def ahorros(monto,tiempo):
+    return (monto)*(tiempo)
+print("Vas a tener ahorrado",ahorros(5000,2),"pesos")
