@@ -1,0 +1,35 @@
+#TAREA
+
+class Helado:
+
+  def __init__ (self,name,sabor,pfruta,pgrasa,pazucar):
+    self.name = name
+    self.sabor = sabor
+    self.pfruta = pfruta
+    self.pgrasa = pgrasa
+    self.pazucar = pazucar
+
+h1 = Helado('Bon fresa','Fresa',15,0,18)
+h2 = Helado('Bon chocolate','Chocolate',0,8,16)
+
+print(f"Nombre:{h1.name}, Sabor:{h1.sabor}, % de fruta:{h1.pfruta}, % de grasa:{h1.pgrasa}, % de azucar:{h1.pazucar}")
+print(f"Nombre:{h2.name}, Sabor:{h2.sabor}, % de fruta:{h2.pfruta}, % de grasa:{h2.pgrasa}, % de azucar:{h2.pazucar}")
+
+class Yogurthelado(Helado):
+  def __init__(self,name,sabor,pfruta,pgrasa,pazucar,extractoseco):
+
+    super().__init__(name,sabor,pfruta,pgrasa,pazucar)
+    self.extractoseco = extractoseco
+
+y1 = Yogurthelado('Yogubon','Vainilla',0,9,12,38)
+y2 = Yogurthelado('Yogu cocofresa','Cocofresa',8,15,5,27)
+
+def extractocorrecto(self):
+  if 36 < self.extractoseco < 42 :
+    return print(f"El helado {self.name} tiene un extracto seco de {self.extractoseco}% y cumple con los parametros requeridos.")
+
+  else :
+    return print(f"El helado {self.name} tiene un extracto seco de {self.extractoseco}% y no cumple con los parametros requeridos.")
+
+extractocorrecto(y1)
+extractocorrecto(y2)
